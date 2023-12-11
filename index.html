@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="todo">
+        <div class="todo__container opacity">
+          <h1>СПИСОК ЗАДАЧ</h1>
+          <div class="todo__search search">
+            <div class="search__block">
+              <input type="text" class="search__input" placeholder="Задача" />
+              <i class="material-symbols-outlined"> search </i>
+            </div>
+            <div class="search__button-all">
+              <nav class="search__navigation">
+                <p id="title">ВСЕ</p>
+                <ul class="search__list">
+                  <li data-f="all">ВСЕ</li>
+                  <li data-f="com">Выполнено</li>
+                  <li data-f="incom">Не выполнено</li>
+                </ul>
+              </nav>
+              <span class="material-symbols-outlined" id="expand"> expand_more </span>
+            </div>
+            <div class="search__button-mode">
+              <span class="material-symbols-outlined mode"> dark_mode </span>
+            </div>
+          </div>
+
+          <div class="todo__notes"></div>
+
+          <div class="todo__add">
+            <span class="material-symbols-outlined"> add </span>
+          </div>
+          <div class="todo__new-note new-note">
+            <form class="new-note__container">
+              <div class="new-note__title">НОВАЯ ЗАДАЧА</div>
+              <div class="new-note__input">
+                <input id="input-form" type="text" placeholder="Введите новую задачу..." />
+              </div>
+              <div class="new-note__buttons">
+                <span class="cancle">ВЫХОД</span>
+                <button type="submit" class="new-note__button">
+                  <i class="apply">ПОДТВЕДИТЬ</i>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
